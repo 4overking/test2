@@ -1,0 +1,15 @@
+CentralStorageBundle\Entity\Library:
+    type: entity
+    table: null
+    repositoryClass: CentralStorageBundle\Repository\LibraryRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        host:
+            type: string
+            length: 255
+            unique: true

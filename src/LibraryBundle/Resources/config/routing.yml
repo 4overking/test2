@@ -1,0 +1,9 @@
+library_get_books:
+    path:     /book
+    defaults: { _controller: LibraryBundle:Main:getBooks }
+    methods: [ GET ]
+
+library_get_users:
+    path:     /user
+    defaults: { _controller: LibraryBundle:Main:getUsers }
+    methods: [ GET ]

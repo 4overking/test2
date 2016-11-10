@@ -1,0 +1,5 @@
+services:
+    library.subscriptions:
+        class: LibraryBundle\Service\SubscriptionsService
+        arguments:
+            - "@doctrine.orm.default_entity_manager"

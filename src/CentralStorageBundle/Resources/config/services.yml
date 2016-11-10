@@ -1,0 +1,4 @@
+services:
+#    central_storage.example:
+#        class: CentralStorageBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

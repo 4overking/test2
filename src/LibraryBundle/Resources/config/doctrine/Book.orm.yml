@@ -1,0 +1,19 @@
+LibraryBundle\Entity\Book:
+    type:  entity
+    table: books
+    repositoryClass: LibraryBundle\Repository\BookRepository
+    id:
+        id:
+            type: integer
+            id:   true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: string
+            length: 255
+    manyToOne:
+        user:
+            targetEntity: User
+            mappedBy:     books
+            nullable:     true

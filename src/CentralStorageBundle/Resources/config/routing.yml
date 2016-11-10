@@ -1,0 +1,15 @@
+central_storage_get_subscribers:
+    path:     /subscribers
+    defaults: { _controller: CentralStorageBundle:Main:getAll }
+    methods: [ GET ]
+
+central_storage_get_user:
+    path:     /subscriber/{uid}
+    defaults: { _controller: CentralStorageBundle:Main:get }
+    methods: [ GET ]
+
+central_storage_get_user_report_foo:
+    path:     /subscriber/{uid}/report/foo
+    defaults: { _controller: CentralStorageBundle:Main:getReportFoo }
+    methods: [ GET ]
+
